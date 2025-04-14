@@ -1,0 +1,421 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #050e2d;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #0e0ec9;
+    border-radius: 6px;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 200;
+    margin: 0.5cm 0;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: #030a24;
+    padding: 15px 0;
+    position: relative;
+    border-bottom: 7px solid #0e0ec9;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    color: #0e0ec9;
+    font-weight: bolder;
+}
+
+#login-register {
+    background-color: #0e0ec9;
+    color: #eee;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 1.0em;
+    font-weight: 800;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    right: 15px;
+}
+#login-register:hover{
+    color: blue;
+    font-weight: bold;
+    background-color: darkslateblue;
+}
+#front-page{
+    background-image: url(images/corvo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    bottom: 27px;
+
+}
+.intro-text {
+    max-width: 1200px;
+    position: relative;
+    top: 30%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+.intro-text h1{
+    color: #eee;
+    font-size: 3.35em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+.intro-text h5 {
+    color: #eee;
+    font-size: 1.55em;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    line-height: 2;
+    margin-bottom: 1.25em;
+}
+.intro-text button {
+    background-color: #0e0ec9;
+    color: #a8a00c;
+    border-radius: 25px;
+    padding: 18px 35px;
+    font-size: 1.05em;
+    font-weight: 700;
+    border: #050e2d;
+    border-style: ridge;
+    cursor: pointer;
+}
+.intro-text button:hover{
+    background-color: darkslateblue;
+    color: blue;
+}
+#about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 10px -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#about .content{
+    width: 50%;
+    margin: 20px;
+}
+#about .content h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #eee;
+}
+#about .content p{
+    max-width: 600px;
+    text-align: justify;
+    color: #eee;
+    font-size: 1.25em;
+}
+#about .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #0e0ec9;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px
+}
+#about .content a:hover{
+    background: #0e0ec9;
+    border: none;
+    color: #eee;
+    box-shadow: 0 0 10px #030a24;
+}
+.creed {
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#games{
+    padding: 0px 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+#games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+#games .filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#games .filter button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #eee;
+    background-color: #0e0ec9;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#games .filter button:hover,
+#games .filter .btn-clicked{
+    background-color: #050e2d;
+}
+#games .cardbox{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#games .cardbox .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #030a24;
+    overflow: hidden;
+}
+#games .cardbox .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+#games .cardbox .card .content{
+    padding: 10px;
+}
+#games .cardbox .card .content h4{
+    color: #fff;
+    margin: 15px 0;
+}
+#games .cardbox .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #0e0ec9;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+#games .cardbox .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #0ec99d;
+    box-shadow: 0 0 10px #0ec99d;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+#games .cardbox .card .info{
+    border-top: 2px solid #0e0ec9;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#games .cardbox .card .info p{
+    font-size: 1.15em;
+    color: #eee;
+}
+#games .cardbox .card .info p span{
+    color: #0ec99d;
+}
+#games .cardbox .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #0e0ec9;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px
+}
+#games .cardbox .card .info a:hover{
+    background: #0e0ec9;
+    border: none;
+    color: #eee;
+    box-shadow: 0 0 10px #030a24;
+}
+#games .cardbox .card.hide{
+    display: none;
+}
+#info {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.prof-pic img {
+    border-radius: 50%;
+    border: 5px solid darkblue;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.details {
+    position: relative;
+    margin-left: 20px;
+    font-size: 0.95em;
+    color: #eee;
+    z-index: 1;
+}
+.bgpic{
+    background-color: #030a24;
+    width: 300px;
+    height: 260%;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    z-index: 0;
+}
+.pic {
+    width: 100%;
+    height: 100%;
+}
+#feedback body, div, form, input, p { 
+font-family: Roboto, Arial, sans-serif;
+font-size: 14px;
+color: #6de8d0;
+line-height: 22px;
+}
+h1 {
+font-weight: 400;
+}
+h4 {
+margin: 5px 0 4px;
+}
+form {
+width: 99%;
+padding: 10px;
+background-color: #050e2d;
+box-shadow: 0 2px 5px #ccc;
+
+}
+.page-wrap {
+width: 960px;
+margin: 0 auto;
+
+}
+input.mp2 {
+width: auto;
+
+}
+input {
+width: calc(90% - 10px);
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 3px;
+vertical-align: middle;
+
+}
+input:hover, textarea:hover {
+outline: none;
+border: 1px solid #095484;
+}
+th, td {
+width: 15%;
+padding: 15px 0;
+border-bottom: 2px solid #ccc;
+text-align: center;
+vertical-align: unset;
+line-height: 18px;
+font-weight: 400;
+word-break: break-all;
+}
+.first-col {
+width: 16%;
+text-align: left;
+}
+table {
+width: 100%;
+}
+#feedback1 {
+text-align: left;
+}
+textarea {
+width: calc(100% - 6px);
+}
+.btn-block {
+margin-top: 20px;
+text-align: center;
+}
+button {
+width: 150px;
+padding: 10px;
+border: none;
+background-color: #095484;
+font-size: 16px;
+color: #fff;
+cursor: pointer;
+}
+button:hover {
+background-color: #0666a3;
+}
+@media (min-width: 568px) {
+th, td {
+word-break: keep-all;
+}
+}
